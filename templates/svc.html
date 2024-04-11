@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>SVC algorithm</title>
+
+<body>
+<h1 style="font-size:60px;text-align:center">Simple Vector Classifier</h1>
+<hr>
+<style>
+nav
+{
+padding:0px;
+width:100%;
+height:100px;
+}
+
+</style>
+
+<div>
+ 
+ <nav >
+<h2 style="background-color:black">
+<fieldset>
+<a href="http://localhost:8888/notebooks/Downloads/gagan/FLASK/templates/SVC%20algorithm.ipynb"><button style="float:right;font-size:100%;color:black;background-color:white;widht:80px;height:40px">
+EXECUTE
+</button>
+</a>
+</nav>
+
+
+
+
+<body>
+    <h1 style="text-align:center">
+    <hr>
+    <form action="/svcres.html" method="post" enctype="multipart/form-data">
+        <label for="file">Upload your dataset here (.csv file):</label><br>
+        <input type="file" id="file" name="file"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<hr>
+</h1>
+
+
+
+  <p>Accuracy:</p>
+  <img src="{{ url_for('static', filename='svacc.jpg') }}" style="width:500px;height:250px"><hr>
+
+  <p>Classification :</p>
+  <img src="{{ url_for('static', filename='svcls.jpg') }}" style="width:500px;height:250px">
+<hr>
+
+  <p>Confusion Matrix:</p>
+  <img src="{{ url_for('static', filename='svco.jpg') }}" style="width:500px;height:250px"><hr>
+
+  
+</div>
+
+</body>
+</html>

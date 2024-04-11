@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KNN Results</title>
+</head>
+<body>
+    <h1 style="text-align:center">KNN Results</h1>
+<hr>
+
+<fieldset>
+
+    <fieldset>
+    <h2>Accuracy</h2>
+    <p>{{ accuracy }}</p>
+    </fieldset>
+
+<fieldset>
+    <h2>Classification Report</h2>
+    <pre>{{ classification_rep }}</pre>
+
+ </fieldset>   
+<fieldset>
+
+    <h2>Confusion Matrix</h2>
+    <pre>{{ cm }}</pre>
+</fieldset>
+
+<fieldset>
+
+    <h2>Categorical Columns</h2>
+    <ul>
+        {% for column in categorical_columns %}
+            <li>{{ column }}</li>
+        {% endfor %}
+    </ul>
+
+</fieldset>
+</fieldset>
+</body>
+</html>
