@@ -417,7 +417,7 @@ def svcres():
 
 if __name__ == '__main__':
     app.config['UPLOAD_FOLDER'] = 'C:/Users/Gagan/Downloads/gagan/FLASK/uploads'
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
 
     
     
